@@ -31,7 +31,7 @@ The core layout and aesthetic are derived from **Mondrian’s compositional phil
 - Rhythmic black, red, yellow, and blue shapes forming dynamic flows
 
 > _You can see my visual sketch and draft here:_  
-> 📎 *(Insert image or sketch reference if hosted)*
+> 📎 ![21749533535_ pic_hd](https://github.com/user-attachments/assets/2076bdb5-6fb2-4be4-aed8-9e4cedd008da)
 
 ---
 
