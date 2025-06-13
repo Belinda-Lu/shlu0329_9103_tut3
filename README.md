@@ -1,23 +1,68 @@
-# Quiz8
-## Part 1
-Our group selected Broadway Boogie Woogie by Piet Mondrian as our inspiration. Its grid-based composition immediately reminded us of arcade games from the 1980s and 1990s, such as Pac-Man and Donkey Kong. The flat color blocks and rhythmic structure provide an ideal visual foundation. We aim to incorporate its geometric layout to design a maze-like dynamic visual experience, where each square becomes part of a playable path.
-https://www.pinterest.com/pin/232850243244847128/
+# 🎷 Jazz in Code: A Mondrian-Inspired p5.js Animation
 
-https://www.pinterest.com/pin/140806232934834/
+## 🖼️ Project Overview
 
+This project is inspired by Piet Mondrian’s *Broadway Boogie Woogie* (1942–43), a painting in which Mondrian visualized his emotional and rhythmic response to New York’s jazz culture using abstract color and form.
 
-## Part 2
-Grid-based movement and pixel-style rendering using 2D arrays in p5.js. This coding technique allows us to transform Mondrian’s geometric grid into a two-dimensional array structure, where we can define “walkable areas,” “walls,” and “dynamic elements.” By listening to keyboard input, the player character can move along the paths—similar to Pac-Man—to create an interactive maze experience. Combined with colored blocks and animation logic, this approach enhances rhythmic dynamics and echoes the artistic language of Mondrian.
+As part of a group generative art exploration using **p5.js**, I created an individual variation focusing on the **trumpet** and the **piano**. These two instruments form the visual and conceptual centerpiece of my work. I extended the Mondrian-style color palette and geometric abstraction to express my own perception of jazz music, blending visual rhythm with musical dynamics.
 
-Basic pixel grid rendering.
-https://raster.ly/tutorials/pixel-grid-in-p5js
+---
 
-Grid movement and path/collision logic
-https://editor.p5js.org/aryan.chharia@gmail.com/sketches/7sFXdJwxA
+## 🕹️ Interaction Instructions
 
-Fading pixel grid animation
-https://happycoding.io/tutorials/p5js/arrays/fading-grid
+To begin the experience, simply **click anywhere on the webpage** to start the jazz audio loop. No further interaction is needed — the animation progresses automatically in sync with the rhythm of the music.
 
-Maze generator (DFS algorithm)
-https://thecodingtrain.com/challenges/10-dfs-maze-generator
+---
 
+## 🎛️ Animation Method
+
+- **Animation Driver**: Audio-based (beat and amplitude)
+- **Effect**: Visual elements (such as shapes, circles, and decorative notes) grow and shrink dynamically in response to the music’s low-frequency energy.
+- **Technique Used**: `p5.sound.FFT().getEnergy()` to extract low-frequency amplitudes and map them to size and scale variations.
+
+---
+
+## 🎨 Visual Inspiration
+
+The core layout and aesthetic are derived from **Mondrian’s compositional philosophy** — modular color blocks and musical abstraction. I reinterpreted the concept using jazz-themed imagery:
+
+- A **trumpet** placed at the center, “blowing out” animated notes
+- A **hand playing piano** in the lower left
+- Rhythmic black, red, yellow, and blue shapes forming dynamic flows
+
+> _You can see my visual sketch and draft here:_  
+> 📎 *(Insert image or sketch reference if hosted)*
+
+---
+
+## 🧠 Technical Notes
+
+This project uses `p5.js` and the `p5.sound` library to create an audio-reactive visual composition. The core functionality is driven by **real-time audio frequency analysis**, allowing the visual elements to respond dynamically to the rhythm and energy of the jazz soundtrack.
+
+### 🎨 Visual Techniques
+
+- Layered shapes are drawn using `beginShape()` and `vertex()` to emulate the painting’s abstract curves and structural flow.
+
+### 🔊 Audio Analysis
+
+- The animation is powered by `p5.FFT`, which performs a Fast Fourier Transform on the playing audio to extract frequency energy.
+
+---
+
+## 💭 Reflection
+
+I invested significant time into detailed **visual rendering and layout precision**, which limited my time for implementing deeper interaction mechanisms. In the future, I plan to integrate:
+
+- Real-time mouse or keyboard triggers  
+- Responsive color schemes  
+- Dynamic instrument motion  
+
+These improvements will make the animation more interactive, immersive, and expressive of the jazz energy I aimed to portray.
+
+---
+
+## 📚 References
+
+- [p5.js sound library documentation](https://p5js.org/reference/#/libraries/p5.sound)
+- [p5.FFT → getEnergy()](https://p5js.org/reference/#/p5.FFT/getEnergy)
+- *Broadway Boogie Woogie*, Piet Mondrian (1942–43)
